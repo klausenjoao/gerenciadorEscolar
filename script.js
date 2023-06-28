@@ -5,6 +5,7 @@ function logar(){
 
 
     if(login == "admin" && senha == "admin"){
+        alert('Sucesso')
         location.href = "telaPrincipal.html";
     }
     else{
