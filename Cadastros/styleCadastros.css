@@ -21,7 +21,7 @@ body{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
 }
 
-.form-prof-image{
+.form-prof-student-image{
     width: 50%;
     display: flex;
     justify-content: center;
@@ -30,7 +30,7 @@ body{
     padding: 1rem;
 }
 
- .form-prof-image img{
+ .form-prof-student-image img{
     width: 31rem;
  }
 
