@@ -15,17 +15,71 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<div id="Cadastro">
-</div>
-
 <body>
-    
-    <form>
-        <h3>Cadastro de Professores</h3>
-        <input type="text" placeholder="Nome" id="name">
-        <input type="text" placeholder="Sobrenome" id="lastName">
-        <input type="submit" onclick="logar(); return false">
-    </form>
+
+    <div class="container2">
+        <div class="form-prof-image">
+           <img src="/Assets/undraw_professor_re_mj1s.svg">
+        </div>
+
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastrar Professor</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="/Index.html">Voltar</a></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstName">Primeiro nome</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Digite seu primeiro nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastName">Sobrenome</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Digite seu sobrenome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastName">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastName">Celular</label>
+                        <input type="tel" name="number" id="number" placeholder="(xx) xxxxx-xxxx" required>
+                    </div>
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
+                    
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Cadastrar</a></button>
+                </div>
+            </form>
+        </div>
+
+   </div>
 
 </body>
 </html>
