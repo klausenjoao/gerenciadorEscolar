@@ -24,9 +24,9 @@
 
         <div class="form">
             <form action="#">
-                <div class="form-header">
+                <div class="form-header-professor">
                     <div class="title">
-                        <h1>Cadastrar professor</h1>
+                        <h1>Cadastrar Professor</h1>
                     </div>
                     <div class="return-button">
                         <button><a href="/Index.html">Voltar</a></button>
@@ -35,24 +35,35 @@
 
                 <div class="input-group">
                     <div class="input-box">
-                        <label for="firstName">Primeiro nome</label>
-                        <input type="text" name="firstName" id="firstName" placeholder="Digite seu primeiro nome" required>
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="lastName">Sobrenome</label>
-                        <input type="text" name="lastName" id="lastName" placeholder="Digite seu sobrenome" required>
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="lastName">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="lastName">Celular</label>
-                        <input type="tel" name="number" id="number" placeholder="(xx) xxxxx-xxxx" required>
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
                     </div>
+
+
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+                    </div>
+
                 </div>
 
                 <div class="gender-inputs">
