@@ -164,7 +164,7 @@ font-size: 0.8rem;
    color: #000000c0;
 }
 
-.cadastrar-button button{
+.cadastrar-button button {
    width: 100%;
     margin-top: 2.5rem;
     border: none;
@@ -179,6 +179,27 @@ font-size: 0.8rem;
 }
 
 .cadastrar-button button a {
+   text-decoration: none;
+   font-size: 0.93rem;
+   font-weight: 500;
+   color: #fff;
+}
+
+.cadastrar-button-professor button{
+   width: 100%;
+    margin-top: 1.3rem;
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cadastrar-button-professor button:hover{
+   background-color: #6b63fff1;
+}
+
+.cadastrar-button-professor button a {
    text-decoration: none;
    font-size: 0.93rem;
    font-weight: 500;
