@@ -2,46 +2,23 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciador</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div class="container">
-        <div class="form-prof-image">
-            <img src="/Assets/undraw_educator_re_ju47.svg">
-         </div>
 
-        <div class="telaPrincipal">
-            <h3>Inicio</h3>
-        <ul>
-            <li>
-                <a href="/Cadastros/cadastroProfessores.html">Cadastro de Professores</a>
-            </li>
+    <form>
+        <h3>Login</h3>
+        <input type="text" placeholder="Nome de usuário ou email" id="login">
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit" onclick="logar(); return false">
+    </form>
 
-            <li>
-                <a href="/Cadastros/cadastroAlunos.html">Cadastro de Alunos</a>
-            </li>
+    <script src="./script.js"></script>
 
-            <li>
-                <a href="">Gerenciar Professores</a>
-            </li>
-
-            <li>
-                <a href="">Gerenciar Alunos</a>
-            </li>
-        </ul>
-    </div>
-    </div>
 </body>
 
 </html>

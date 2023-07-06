@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gerenciador</title>
-    <link rel="stylesheet" href="/Cadastros/styleCadastros.css"/>
+    <link rel="stylesheet" href="/Cadastros/styleCadastros.css" />
 </head>
 
 <body>
 
     <div class="container">
         <div class="form-prof-student-image">
-           <img src="/Assets/undraw_education_f8ru.svg">
+            <img src="/Assets/undraw_education_f8ru.svg">
         </div>
 
         <div class="form">
@@ -28,14 +26,15 @@
                         <h1>Cadastrar Aluno</h1>
                     </div>
                     <div class="return-button">
-                        <button><a href="/Index.html">Voltar</a></button>
+                        <button><a href="/home.html">Voltar</a></button>
                     </div>
                 </div>
 
                 <div class="input-group">
                     <div class="input-box">
                         <label for="firstName">Primeiro nome</label>
-                        <input type="text" name="firstName" id="firstName" placeholder="Digite seu primeiro nome" required>
+                        <input type="text" name="firstName" id="firstName" placeholder="Digite seu primeiro nome"
+                            required>
                     </div>
 
                     <div class="input-box">
@@ -58,11 +57,16 @@
                     <div class="gender-title">
                         <h6>Gênero</h6>
                     </div>
-                    
+
                     <div class="gender-group">
                         <div class="gender-input">
                             <input type="radio" id="female" name="gender">
                             <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="others" type="radio" name="gender">
+                            <label for="others">Outros</label>
                         </div>
 
                         <div class="gender-input">
@@ -78,6 +82,7 @@
             </form>
         </div>
 
-   </div>
+    </div>
 </body>
+
 </html>

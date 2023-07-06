@@ -83,6 +83,17 @@ ul li a {
     font-weight: 500;
 }
 
+.telaPrincipal h1::after {
+    content: '';
+    display: block;
+    width: 5.3rem;
+    height: 0.3rem;
+    background-color: #6c63ff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+ }
+ 
 @media screen and (max-width: 1330px) {
     .form-prof-image {
         display: none;
