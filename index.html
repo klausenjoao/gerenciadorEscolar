@@ -9,14 +9,37 @@
 </head>
 
 <body>
+    <div class="containerLogin">
 
-    <form>
-        <h3>Login</h3>
-        <input type="text" placeholder="Nome de usuário ou email" id="login">
-        <input type="password" placeholder="Senha" id="senha">
-        <input type="submit" onclick="logar(); return false">
-    </form>
 
+        <div class="formLogin">
+            <form action="logar">
+                <div class="form-header-login">
+                    <div class="title">
+                        <h1>Login</h1>
+                    </div>
+                </div>
+
+                <div class="input-group-login">
+                    <div class="input-box-login">
+                        <label for="firstname">Usuário</label>
+                        <input id="login" type="text" name="login" placeholder="Nome de usuário ou email" required>
+                    </div>
+
+                    <div class="input-box-login">
+                        <label for="password">Senha</label>
+                        <input id="senha" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="input-box-login">
+                        <input type="submit" onclick="logar(); return false">
+                    </div>
+                </div>
+
+        </div>
+        </form>
+    </div>
+    </div>
     <script src="./script.js"></script>
 
 </body>
