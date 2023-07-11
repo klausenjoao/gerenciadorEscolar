@@ -126,7 +126,7 @@ ul li a {
 .form-header-login {
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     display: flex;
 }
 
@@ -150,6 +150,10 @@ ul li a {
         width: 50%;
     }
 
+    .containerLogin {
+        width: 50%;
+    }
+
     .telaPrincipal {
         width: 100%;
     }
@@ -157,6 +161,11 @@ ul li a {
 
 @media screen and (max-width: 1064px) {
     .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .containerLogin {
         width: 90%;
         height: auto;
     }
