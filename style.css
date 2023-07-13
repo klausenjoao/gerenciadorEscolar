@@ -14,7 +14,7 @@ body {
     background: #0c0ce94d;
 }
 
-.container {
+.conteiner {
     width: 80%;
     height: 80vh;
     display: flex;
@@ -145,11 +145,11 @@ ul li a {
         display: none;
     }
 
-    .container {
+    .conteiner {
         width: 50%;
     }
 
-    .containerLogin {
+    .conteinerLogin {
         width: 50%;
     }
 
@@ -159,12 +159,12 @@ ul li a {
 }
 
 @media screen and (max-width: 1064px) {
-    .container {
+    .conteiner {
         width: 90%;
         height: auto;
     }
 
-    .containerLogin {
+    .conteinerLogin {
         width: 90%;
         height: auto;
     }
