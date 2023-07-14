@@ -140,7 +140,45 @@ ul li a {
     position: absolute;
     border-radius: 10px;
 }
- 
+
+.form-header-home {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header-home h1::after {
+    content: '';
+    display: block;
+    width: 5.4rem;
+    height: 0.3rem;
+    background-color: #6c63ff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    margin-left: 7rem;
+}
+
+.back-button button {
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.back-button button:hover {
+    background-color: #6b63fff1;
+}
+
 @media screen and (max-width: 1330px) {
     .form-prof-image {
         display: none;
