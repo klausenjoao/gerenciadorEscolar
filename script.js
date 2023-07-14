@@ -12,3 +12,13 @@ function logar(){
         alert('Usuário ou senha incorretos');
     }
 }
+
+function back() {
+    var confirmacao = confirm("Deseja realmente sair?");
+
+    if (confirmacao) {
+        // Aqui você pode adicionar a lógica para sair ou redirecionar para outra página
+        // Por exemplo:
+        window.location.href = "./index.html";
+    }
+}
