@@ -70,7 +70,6 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
-
     padding: 24px 0;
 }
 
@@ -79,14 +78,16 @@ ul li a {
     justify-content: center;
     align-items: center;
     text-align: center;
-
     padding: 16px 24px;
-
     border-radius: 8px;
-    border: 1px solid black;
-
     text-decoration: none;
     font-weight: 500;
+    color: #fff;
+    background-color: #6c63ff;
+}
+
+ul li a:hover {
+    background-color: #6b63fff1;
 }
 
 .telaPrincipal h1::after {
