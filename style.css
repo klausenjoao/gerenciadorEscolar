@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/Assets/image.jpg);
+    background: url(../Assets/image.jpg);
     background-size: 100% 100vh;
     background-position: right top;
     background-repeat: no-repeat;
@@ -23,6 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #406B5D;
 }
 
 .conteiner {
@@ -30,7 +31,6 @@
     height: 80vh;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
-    /*border: 2px solid red;*/
 }
 
 .conteinerLogin {
@@ -39,7 +39,7 @@
     display: flex;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
-    background-color: rgba(64, 107, 93, 0.705);
+    background-color: rgba(255, 255, 255, 0.6);
     /*border: 2px solid red;*/
 }
 
@@ -95,11 +95,11 @@ ul li a {
     text-decoration: none;
     font-weight: 500;
     color: #fff;
-    background-color: #6c63ff;
+    background-color: #406B5D;
 }
 
 ul li a:hover {
-    background-color: #6b63fff1;
+    background-color: #6CA190;
 }
 
 .telaPrincipal h1::after {
@@ -107,7 +107,7 @@ ul li a:hover {
     display: block;
     width: 5.3rem;
     height: 0.3rem;
-    background-color: #6c63ff;
+    background-color: #406B5D;
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
@@ -147,7 +147,7 @@ ul li a:hover {
     display: block;
     width: 5.3rem;
     height: 0.3rem;
-    background-color: #D6C5AA;
+    background-color: black;
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
@@ -164,7 +164,7 @@ ul li a:hover {
     display: block;
     width: 5.4rem;
     height: 0.3rem;
-    background-color: #6c63ff;
+    background-color: #406B5D;
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
@@ -178,7 +178,7 @@ ul li a:hover {
 
 .back-button button {
     border: none;
-    background-color: #6c63ff;
+    background-color: #406B5D;
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
@@ -188,20 +188,12 @@ ul li a:hover {
 }
 
 .back-button button:hover {
-    background-color: #6b63fff1;
+    background-color: #6CA190;
 }
 
 @media screen and (max-width: 1330px) {
     .form-prof-image {
         display: none;
-    }
-
-    .login {
-        background: #406B5D;
-    }
-
-    .conteinerLogin {
-        background-color: white;
     }
 
     .conteiner {
