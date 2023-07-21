@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador</title>
+    <link rel="stylesheet" href="/Gerencia/styleGerencia.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span>Gerenciar Professores</span>
+            <button onclick="window.location.href = '../home.html'" id="return">Voltar</i></button>
+        </div>
+
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>Email</th>
+                        <th>Celular</th>
+                        <th>Senha</th>
+                        <th class="acao">Editar</th>
+                        <th class="acao">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="modal-container">
+            <div class="modal">
+                <form>
+                    <label for="firstName">Primeiro nome</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Digite seu primeiro nome" required>
+
+                    <label for="lastName">Sobrenome</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Digite seu sobrenome" required>
+
+                    <label for="lastName">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+
+                    <label for="lastName">Celular</label>
+                    <input type="tel" name="number" id="number" placeholder="(xx) xxxxx-xxxx" required>
+
+                    <label for="password">Senha</label>
+                    <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    <button id="btnSalvar">Salvar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
