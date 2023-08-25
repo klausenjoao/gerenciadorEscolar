@@ -16,7 +16,6 @@ body {
 
 button {
   cursor: pointer;
-  display: flex;
   align-items: center;
 }
 
@@ -27,7 +26,7 @@ button {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 }
 
-.header {
+.form-header {
   min-height: 70px;
   display: flex;
   align-items: center;
@@ -35,7 +34,43 @@ button {
   margin: auto 12px;
 }
 
-.header span {
+.form-header span::after {
+  content: '';
+  display: block;
+  width: 13.2rem;
+  height: 0.3rem;
+  background-color: #406B5D;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.form-header span {
+  font-weight: 900;
+  font-size: 20px;
+  word-break: break-all;
+}
+
+.form-header-alunos {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto 12px;
+}
+
+.form-header-alunos span::after {
+  content: '';
+  display: block;
+  width: 10.5rem;
+  height: 0.3rem;
+  background-color: #406B5D;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.form-header-alunos span {
   font-weight: 900;
   font-size: 20px;
   word-break: break-all;
@@ -116,7 +151,7 @@ tbody tr td.acao {
     font-size: 10px;
   }
 
-  .header span {
+  .form-header span {
     font-size: 15px;
   }
 
@@ -193,7 +228,7 @@ tbody tr td.acao {
   padding: 5px 10px;
   width: 100%;
   border: none;
-  background-color: rgb(57, 57, 226);
+  background-color: #406B5D;
   color: white;
 }
 

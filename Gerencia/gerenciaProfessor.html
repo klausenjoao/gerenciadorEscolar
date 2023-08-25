@@ -15,20 +15,18 @@
 
 <body>
     <div class="container">
-        <div class="header">
+        <div class="form-header">
             <span>Gerenciar Professores</span>
-            <button onclick="window.location.href = '../home.html'" id="return">Voltar</i></button>
+            <button onclick="window.location.href = '../home.html'" id="return" >Voltar</i></button>
         </div>
-
         <div class="divTable">
-            <table>
+            <table id="tableProfessor">
                 <thead>
                     <tr>
                         <th>Nome</th>
                         <th>Sobrenome</th>
                         <th>Email</th>
-                        <th>Celular</th>
-                        <th>Senha</th>
+                        <th>Telefone</th>
                         <th class="acao">Editar</th>
                         <th class="acao">Excluir</th>
                     </tr>
@@ -55,13 +53,13 @@
 
                     <label for="password">Senha</label>
                     <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+
                     <button id="btnSalvar">Salvar</button>
                 </form>
             </div>
         </div>
-
     </div>
-    <script src="script.js"></script>
+    <script src="./scriptGerencia.js"></script>
 </body>
 
 </html>

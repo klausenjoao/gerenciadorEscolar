@@ -1,14 +1,14 @@
 
-function logar(){
+function logar() {
     var login = document.getElementById('login').value;
     var senha = document.getElementById('senha').value;
 
 
-    if(login == "admin" && senha == "admin"){
+    if (login == "admin" && senha == "admin") {
         alert('Sucesso')
         location.href = "home.html";
     }
-    else{
+    else {
         alert('Usuário ou senha incorretos');
     }
 }
