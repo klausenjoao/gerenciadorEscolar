@@ -54,3 +54,4 @@ const cadastroProfessor = () => {
 //EVENTOS
 document.getElementById('cadastrarProfessor')
     .addEventListener('click', cadastroProfessor)
+    console.log()

@@ -20,7 +20,7 @@
         </div>
 
         <div class="form">
-            <form action="#">
+            <form id="form-aluno">
                 <div class="form-header">
                     <div class="title">
                         <h1>Cadastrar Aluno</h1>
@@ -31,25 +31,24 @@
                 </div>
 
                 <div class="input-group">
-                    <div class="input-box">
-                        <label for="firstName">Primeiro nome</label>
-                        <input type="text" name="firstName" id="firstName" placeholder="Digite seu primeiro nome"
-                            required>
+                    <div class="input-box-aluno">
+                        <label for="firstName">Primeiro Nome</label>
+                        <input id="firstName" type="text" name="firstName" placeholder="Digite seu primeiro nome">
                     </div>
 
-                    <div class="input-box">
+                    <div class="input-box-aluno">
                         <label for="lastName">Sobrenome</label>
-                        <input type="text" name="lastName" id="lastName" placeholder="Digite seu sobrenome" required>
+                        <input id="lastName" type="text" name="lastName" placeholder="Digite seu sobrenome" >
                     </div>
 
-                    <div class="input-box">
-                        <label for="lastName">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                    <div class="input-box-aluno">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" >
                     </div>
 
-                    <div class="input-box">
-                        <label for="lastName">Celular</label>
-                        <input type="tel" name="number" id="number" placeholder="(xx) xxxxx-xxxx" required>
+                    <div class="input-box-aluno">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" >
                     </div>
                 </div>
 
@@ -77,13 +76,13 @@
                 </div>
 
                 <div class="cadastrar-button">
-                    <button><a href="#">Cadastrar</a></button>
+                    <button id="cadastrarAluno"><a>Cadastrar</a></button>
                 </div>
             </form>
         </div>
 
     </div>
-    <script src="../script.js"></script>
+    <script src="./scriptCadastroAlunos.js"></script>
 </body>
 
 </html>

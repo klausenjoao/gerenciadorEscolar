@@ -10,6 +10,7 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
@@ -24,13 +25,13 @@
         </div>
 
         <div class="divTable">
-            <table id="tableProfessor">
+            <table id="tableAluno">
                 <thead>
                     <tr>
                         <th>Nome</th>
                         <th>Sobrenome</th>
                         <th>Email</th>
-                        <th>Celular</th>
+                        <th>Telefone</th>
                         <th class="acao">Editar</th>
                         <th class="acao">Excluir</th>
                     </tr>
@@ -44,22 +45,22 @@
             <div class="modal">
                 <form>
                     <label for="firstName">Primeiro nome</label>
-                    <input type="text" name="firstName" id="firstName" placeholder="Digite seu primeiro nome" required>
+                    <input type="text" name="firstName" id="firstName" placeholder="Digite seu primeiro nome">
 
                     <label for="lastName">Sobrenome</label>
-                    <input type="text" name="lastName" id="lastName" placeholder="Digite seu sobrenome" required>
+                    <input type="text" name="lastName" id="lastName" placeholder="Digite seu sobrenome">
 
                     <label for="lastName">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email">
 
                     <label for="lastName">Celular</label>
-                    <input type="tel" name="number" id="number" placeholder="(xx) xxxxx-xxxx" required>
+                    <input type="tel" name="number" id="number" placeholder="(xx) xxxxx-xxxx">
                     <button id="btnSalvar">Salvar</button>
                 </form>
             </div>
         </div>
 
     </div>
-    <script src="../script.js"></script>
+    <script src="./scriptGerenciaAlunos.js"></script>
 </body>
 </html>
