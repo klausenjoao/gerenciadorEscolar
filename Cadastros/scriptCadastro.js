@@ -11,13 +11,6 @@ const updateProfessor = (index, professor) => {
 //READ
 const readProfessor = () => getLocalStorage()
 
-//DELETE
-const deleteProfessor = (index) => {
-    const dbProfessor = readProfessor()
-    dbProfessor.splice(index, 1)
-    setLocalStorage(dbProfessor)
-}
-
 //CRUD- CREATE
 const createProfessor = (professor) => {
     const dbProfessor = getLocalStorage()

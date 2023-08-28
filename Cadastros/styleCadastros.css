@@ -108,14 +108,14 @@ body {
    padding: 1rem 0rem;
 }
 
-.input-box {
+.input-box, .input-box-aluno {
    display: flex;
    flex-direction: column;
    margin-bottom: 1.1rem;
 }
 
 
-.input-box input {
+.input-box input, .input-box-aluno input {
    margin: 0.6rem 0;
    padding: 0.8rem 1.2rem;
    border: none;
@@ -124,22 +124,23 @@ body {
    font-size: 0.8rem;
 }
 
-.input-box input:hover {
+.input-box input:hover, .input-box-aluno input:hover  {
    background-color: #eeeeee75;
 }
 
-.input-box input:focus-visible {
+.input-box input:focus-visible, .input-box-aluno input:focus-visible {
    outline: 1px solid #406B5D;
 }
 
 .input-box label,
+.input-box-aluno label,
 .gender.title h6 {
    font-size: 0.75rem;
    font-weight: 600;
    color: #000000c0;
 }
 
-.input-box input::placeholder {
+.input-box input::placeholder, .input-box-aluno input::placeholder {
    color: #000000be;
 }
 
@@ -265,7 +266,7 @@ body {
       margin-left: 5%;
    }
 
-   .input-box{
+   .input-box, .input-box-aluno{
       margin-left: 2%;
    }
 

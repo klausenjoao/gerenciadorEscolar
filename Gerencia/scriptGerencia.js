@@ -14,20 +14,15 @@ function openModal(edit = false, index = 0) {
     modal.classList.add('active')
 }
 
-function editItem(index) {
-    const professor = readProfessor()[index]
-    openModal(true, index)
-    fillFields(professor)
-
-    modal.onclick = e => {
-        if (e.target.className.indexOf('modal-container') !== -1) {
-            modal.classList.remove('active')
-        }
-    }
-}
-
 //READ
 const readProfessor = () => getLocalStorage()
+
+//DELETE
+const deleteProfessor = (index) => {
+    const dbProfessor = readProfessor()
+    dbProfessor.splice(index, 1)
+    setLocalStorage(dbProfessor)
+}
 
 //Cria linha na Tabela
 const createRow = (professor, index) => {
@@ -59,6 +54,18 @@ const fillFields = (professor) => {
     document.getElementById('email').value = professor.email
     document.getElementById('number').value = professor.number
     document.getElementById('password').value = professor.password
+}
+
+function editItem(index) {
+    const professor = readProfessor()[index]
+    openModal(true, index)
+    fillFields(professor)
+
+    modal.onclick = e => {
+        if (e.target.className.indexOf('modal-container') !== -1) {
+            modal.classList.remove('active')
+        }
+    }
 }
 
 updateTable()
