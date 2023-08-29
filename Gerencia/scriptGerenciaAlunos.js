@@ -27,6 +27,12 @@ function editItem(index) {
     }
 }
 
+//DELETE
+const deleteAluno = (index) => {
+    const dbAluno = readAluno()
+    dbAluno.splice(index, 1)
+    setLocalStorage(dbAluno)
+}
 //READ
 const readAluno = () => getLocalStorage()
 
@@ -42,17 +48,22 @@ const createRowAluno = (aluno, index) => {
       <button id="button i" onclick="editItem(${index})"><i class='bx bx-edit' ></i></button>
     </td>
     <td class="acao">
-      <button id="button i" onclick="deleteItem(${index})"><i class='bx bx-trash'></i></button>
+      <button id="button i" onclick="deleteAlunoItem(${index})"><i class='bx bx-trash'></i></button>
     </td>
 `
-    document.querySelector('#tableAluno').appendChild(newRowAluno)
+    document.querySelector('#tableAluno>tbody').appendChild(newRowAluno)
+}
+
+const clearTable = () => {
+    const rows = document.querySelectorAll('#tableAluno>tbody tr')
+    rows.forEach(row => row.parentNode.removeChild(row))
 }
 
 //atualiza os dados na tabela
 const updateTableAluno = () => {
     const dbAluno = readAluno()
+    clearTable()
     dbAluno.forEach(createRowAluno)
-    console.log()
 }
 
 const fillFields = (aluno) => {
@@ -60,6 +71,15 @@ const fillFields = (aluno) => {
     document.getElementById('lastName').value = aluno.lastName
     document.getElementById('email').value = aluno.email
     document.getElementById('number').value = aluno.number
+}
+
+function deleteAlunoItem(index) {
+    const aluno = readAluno()[index]
+    const response = confirm(`Deseja realmente excluir o aluno ${aluno.firstName}`)
+    if (response) {
+        deleteAluno(index)
+        updateTableAluno()
+    }
 }
 
 updateTableAluno()

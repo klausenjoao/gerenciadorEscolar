@@ -36,15 +36,21 @@ const createRow = (professor, index) => {
       <button id="button i" onclick="editItem(${index})"><i class='bx bx-edit' ></i></button>
     </td>
     <td class="acao">
-      <button id="button i" onclick="deleteItem(${index})"><i class='bx bx-trash'></i></button>
+      <button id="button i" onclick="deleteProfessoritem(${index})"><i class='bx bx-trash'></i></button>
     </td>
 `
     document.querySelector('#tableProfessor>tbody').appendChild(newRow)
 }
 
+const clearTable = () => {
+    const rows = document.querySelectorAll('#tableProfessor>tbody tr')
+    rows.forEach(row => row.parentNode.removeChild(row))
+}
+
 //atualiza os dados na tabela
 const updateTable = () => {
     const dbProfessor = readProfessor()
+    clearTable()
     dbProfessor.forEach(createRow)
 }
 
@@ -55,7 +61,6 @@ const fillFields = (professor) => {
     document.getElementById('number').value = professor.number
     document.getElementById('password').value = professor.password
 }
-
 function editItem(index) {
     const professor = readProfessor()[index]
     openModal(true, index)
@@ -68,4 +73,12 @@ function editItem(index) {
     }
 }
 
+function deleteProfessoritem(index) {
+    const professor = readProfessor()[index]
+    const response = confirm(`Deseja realmente excluir o professor ${professor.firstName}`)
+    if (response) {
+        deleteProfessor(index)
+        updateTable()
+    }
+}
 updateTable()
