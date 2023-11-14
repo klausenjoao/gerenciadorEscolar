@@ -17,6 +17,12 @@ const isValidFields = () => {
   return document.getElementById('form').reportValidity()
 }
 
+//Limpa os campos após o cadastro
+const clearFields = () => {
+  const fields = document.querySelectorAll('.input-box')
+  fields.forEach(field => field.value = "")
+}
+
 //DELETE
 const deleteProfessor = (index) => {
   const dbProfessor = readProfessor()
