@@ -40,11 +40,11 @@
             </table>
         </div>
 
-        <div class="modal-container">
+        <div class="modal-container" id="modal-aluno">
             <div class="modal">
-                <form>
+                <form id="form">
                     <label for="firstName">Primeiro nome</label>
-                    <input type="text" name="firstName" id="firstName" placeholder="Digite seu primeiro nome">
+                    <input type="text" name="firstName" data-index="new" id="firstName" placeholder="Digite seu primeiro nome">
 
                     <label for="lastName">Sobrenome</label>
                     <input type="text" name="lastName" id="lastName" placeholder="Digite seu sobrenome">
@@ -56,10 +56,11 @@
                     <input type="tel" name="number" id="number" placeholder="(xx) xxxxx-xxxx">
                     
                     <button id="btnSalvar">Salvar</button>
+                    <button id="cancelar">Cancelar</button>
                 </form>
-                    </div>
+            </div>
         </div>
     </div>
-    <script src="../scriptGerenciaAlunos.js"></script>
+    <script src="../src/gerenciaAluno.js"></script>
 </body>
 </html>
