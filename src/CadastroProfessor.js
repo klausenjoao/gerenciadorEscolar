@@ -1,13 +1,6 @@
 const getLocalStorage = () => JSON.parse(localStorage.getItem('db_professor')) ?? []
 const setLocalStorage = (dbProfessor) => localStorage.setItem("db_professor", JSON.stringify(dbProfessor))
 
-//UPDATE
-const updateProfessor = (index, professor) => {
-    const dbProfessor = readProfessor()
-    dbProfessor[index] = professor
-    setLocalStorage(dbProfessor)
-}
-
 //READ
 const readProfessor = () => getLocalStorage()
 
@@ -18,16 +11,17 @@ const createProfessor = (professor) => {
     setLocalStorage(dbProfessor)
 }
 
-//Verifica o preenchimento
-const isValidfields = () => {
-    return document.getElementById('form').reportValidity()
-}
-
 //Limpa os campos após o cadastro
 const clearFields = () => {
     const fields = document.querySelectorAll('.input-box')
     fields.forEach(field => field.value = "")
 }
+
+//Verifica o preenchimento
+const isValidfields = () => {
+    return document.getElementById('form').reportValidity()
+  }
+
 
 //INTERAÇÃO COM LAYOUT
 const cadastroProfessor = () => {

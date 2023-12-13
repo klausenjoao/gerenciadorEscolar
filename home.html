@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gerenciador</title>
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body class="home">
-
+  <body class="home">
     <div class="conteiner">
-        <div class="form-prof-image">
-            <img src="./Assets/undraw_educator_re_ju47.svg">
+      <div class="form-prof-image">
+        <img src="./Assets/undraw_educator_re_ju47.svg" />
+      </div>
+
+      <div class="telaPrincipal">
+        <div class="form-header-home">
+          <div class="title">
+            <h1>Menu</h1>
+          </div>
+          <div class="back-button">
+            <button onclick="back()">Sair</button>
+          </div>
         </div>
 
-        <div class="telaPrincipal">
-            <div class="form-header-home">
-                <div class="title">
-                    <h1>Menu</h1>
-                </div>
-                <div class="back-button">
-                    <button onclick="back()">Sair</button>
-                </div>
-            </div>
+        <div>
+          <ul>
+            <li>
+              <a href="./Cadastros/cadastroProfessores.html"
+                >Cadastro de Professores</a
+              >
+            </li>
 
-            <div>
-                <ul>
-                    <li>
-                        <a href="./Cadastros/cadastroProfessores.html">Cadastro de Professores</a>
-                    </li>
+            <li>
+              <a href="./Cadastros/cadastroAlunos.html">Cadastro de Alunos</a>
+            </li>
 
-                    <li>
-                        <a href="./Cadastros/cadastroAlunos.html">Cadastro de Alunos</a>
-                    </li>
+            <li>
+              <a href="./Gerencia/gerenciaProfessor.html"
+                >Gerenciar Professores</a
+              >
+            </li>
 
-                    <li>
-                        <a href="./Gerencia/gerenciaProfessor.html">Gerenciar Professores</a>
-                    </li>
-
-                    <li>
-                        <a href="./Gerencia/gerenciaAluno.html">Gerenciar Alunos</a>
-                    </li>
-                </ul>
-            </div>
+            <li>
+              <a href="./Gerencia/gerenciaAluno.html">Gerenciar Alunos</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
-
     <script src="./script.js"></script>
-    
-</body>
-
+  </body>
 </html>
