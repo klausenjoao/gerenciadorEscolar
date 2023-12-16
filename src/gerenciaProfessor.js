@@ -39,10 +39,10 @@ const createRow = (professor, index) => {
     <td>${professor.email}</td>
     <td>${professor.number}</td>
     <td>
-    <button type="button" id='edit-${index}'>Editar</button>
+    <button type="button" id='edit-${index}' class='edit-button'>Editar</button>
     </td>
     <td>
-    <button type="button" id='delete-${index}'>Excluir</button>
+    <button type="button" id='delete-${index}' class='delete-button'>Excluir</button>
     </td>
 `;
   document.querySelector("#tableProfessor>tbody").appendChild(newRow);
