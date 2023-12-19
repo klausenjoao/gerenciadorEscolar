@@ -178,6 +178,10 @@ tbody tr td.acao {
   text-align: center;
 }
 
+#btnImprimir{
+  margin: 10px 45%;
+}
+
 @media (max-width: 700px) {
   body {
     font-size: 10px;
