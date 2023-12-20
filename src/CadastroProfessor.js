@@ -31,7 +31,6 @@ const cadastroProfessor = () => {
             lastName: document.getElementById('lastName').value,
             email: document.getElementById('email').value,
             number: document.getElementById('number').value,
-            password: document.getElementById('password').value,
         }
         createProfessor(professor)
         clearFields()

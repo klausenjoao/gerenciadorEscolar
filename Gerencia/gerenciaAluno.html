@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,17 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
 </head>
 
 <body>
     <div class="container">
         <div class="form-header-alunos">
             <span>Gerenciar Alunos</span>
-            <button onclick="window.location.href = '../home.html'" id="return">Voltar</i></button>
+            <button onclick="window.location.href = '../home.html'" id="return">Voltar</button>
         </div>
 
         <div class="divTable">
@@ -31,20 +28,22 @@
                         <th>Sobrenome</th>
                         <th>Email</th>
                         <th>Telefone</th>
-                        <th>Editar</th>
-                        <th>Excluir</th>
+                        <th class="nome-edit-coluna">Editar</th>
+                        <th class="nome-delete-coluna">Excluir</th>
                     </tr>
                 </thead>
                 <tbody>
                 </tbody>
             </table>
+            <button id="btnImprimir">Imprimir</button>
         </div>
 
         <div class="modal-container" id="modal-aluno">
             <div class="modal">
                 <form id="form">
                     <label for="firstName">Primeiro nome</label>
-                    <input type="text" name="firstName" data-index="new" id="firstName" placeholder="Digite seu primeiro nome">
+                    <input type="text" name="firstName" data-index="new" id="firstName"
+                        placeholder="Digite seu primeiro nome">
 
                     <label for="lastName">Sobrenome</label>
                     <input type="text" name="lastName" id="lastName" placeholder="Digite seu sobrenome">
@@ -54,13 +53,19 @@
 
                     <label for="lastName">Celular</label>
                     <input type="tel" name="number" id="number" placeholder="(xx) xxxxx-xxxx">
-                    
+
                     <button id="btnSalvar">Salvar</button>
                     <button id="cancelar">Cancelar</button>
                 </form>
+                <button id="imprimirAluno">Imprimir informações do aluno</button>
             </div>
         </div>
     </div>
-    <script src="../src/gerenciaAluno.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../src/impressaoPdf.js" defer></script>
+    <script src="../src/gerenciaAluno.js" defer></script>
 </body>
+
 </html>

@@ -40,10 +40,10 @@ const createRowAluno = (aluno, index) => {
       <td>${aluno.email}</td>
       <td>${aluno.number}</td>
       <td>
-    <button type="button" id='edit-${index}'>Editar</button>
+    <button type="button" id='edit-${index}' class='edit-button'>Editar</button>
     </td>
     <td>
-    <button type="button" id='delete-${index}'>Excluir</button>
+    <button type="button" id='delete-${index}' class='delete-button'>Excluir</button>
     </td>
 `;
   document.querySelector("#tableAluno>tbody").appendChild(newRowAluno);

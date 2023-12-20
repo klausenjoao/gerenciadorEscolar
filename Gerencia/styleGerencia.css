@@ -17,6 +17,38 @@ body {
 button {
   cursor: pointer;
   align-items: center;
+  display: flex;
+}
+
+.delete-button{
+  background-color: rgb(207, 32, 32);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.delete-button:hover{
+  background-color: darkred;
+}
+.edit-button{
+  background-color: #e67e22;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.edit-button:hover{
+  background-color: #d35400;
+}
+
+.nome-edit-coluna{
+  text-align: center;
+}
+
+.nome-delete-coluna{
+  text-align: center;
 }
 
 .container {
@@ -146,6 +178,20 @@ tbody tr td.acao {
   text-align: center;
 }
 
+#btnImprimir{
+  margin: 10px 45%;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #406B5D;
+}
+
+#btnImprimir:hover {
+  background-color: #6CA190;
+}
+
 @media (max-width: 700px) {
   body {
     font-size: 10px;
@@ -221,15 +267,18 @@ tbody tr td.acao {
 }
 
 .modal button {
-  width: 100%;
   margin: 10px auto;
-  outline: none;
   border-radius: 20px;
   padding: 5px 10px;
-  width: 100%;
+  width: 25%;
   border: none;
   background-color: #406B5D;
   color: white;
+  justify-content: center;
+}
+
+.modal button:hover{
+  background-color: #6CA190;
 }
 
 .active {
