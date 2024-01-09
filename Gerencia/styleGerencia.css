@@ -192,6 +192,20 @@ tbody tr td.acao {
   background-color: #6CA190;
 }
 
+#btnImprimirProfessor{
+  margin: 10px 45%;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #406B5D;
+}
+
+#btnImprimirProfessor:hover {
+  background-color: #6CA190;
+}
+
 @media (max-width: 700px) {
   body {
     font-size: 10px;
